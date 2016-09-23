@@ -27,7 +27,8 @@
                   var token = result.credential.accessToken;
                   // The signed-in user info.
                   var user = result.user;
-                console.log(user);
+                    user = JSON.parse(user);
+                console.log(user[0]['email']);
                   // ...
             }).catch(function(error) {
                   // Handle Errors here.
@@ -37,7 +38,7 @@
                   var email = error.email;
                   // The firebase.auth.AuthCredential type that was used.
                   var credential = error.credential;
-                console.log(error);
+                console.log("Error " + error);
                   // ...
             });
     })
