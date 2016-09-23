@@ -24,32 +24,13 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       
-    <script>
-            $(window).load(function() {
-                $(".loadingDiv").fadeOut("slow");
-            });
-      </script>
+    
+      <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
   </head>
   <body class="bodyGet">
-    <div class="loadingDiv">
-        <center><span style="font-size: 24px;">Loading <img src="Images/dots.gif" width="20"></span></center>
-    </div>
-    <div class="container">
-        <!-- Div row for messages -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="Messages" style="height: 80vh; width: 100%; overflow-y: auto; color: white;">
-                        <p class="status" style="font-size: 3vh; padding: 10px;">Status : <span id="statusMessage">Online</span></p>
-                </div>
-            </div>
-        </div>
-        <!-- End of Div row of messages -->
-        <hr class="seperator">
-        <!-- Div Row of Footer -->
-        <div class="row">
-            <div class="col-md-10"><input class="form-control input-lg" id="inputlg" type="text" style="border-radius: 0;" tabindex=0 autocomplete="off" autofocus placeholder="Type your message here.."></div>  
-            <div class="col-md-2"><button type="button" style="width: 100%;border-radius: 0;" class="btn btn-success btn-lg"> Send <span class="glyphicon glyphicon-send"></span> </button></div>
-        </div>
-    </div>
+      <hr>
+      <br>
+      <center><button type="button" class="btn btn-success" id="loginBtn"> Login </button></center>
+      <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
